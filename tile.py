@@ -13,6 +13,8 @@ class Tilemap(pygame.sprite.Group):
     def generate_tilemap(self) -> None:
         for x in [TILE_SIZE[0] * i for i in range(20)]:
             self.add(Tile(x, 600, tile_type=random.randint(0,1)))
+        self.add(Tile(0, 580, 0))
+        self.add(Tile(400, 580, 0))
             
 
 
